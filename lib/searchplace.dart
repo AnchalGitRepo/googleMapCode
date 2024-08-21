@@ -37,7 +37,6 @@ class _SearchMapScreenState extends State<SearchMapScreen> {
 
       ),
     );
-
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       final List<dynamic> predictions = data['predictions'];
